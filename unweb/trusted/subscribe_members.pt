@@ -1,0 +1,32 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" i18n:domain="opencore"
+  metal:use-macro="here/@@standard_macros/master">
+  <body>
+    <div metal:fill-slot="content">
+      <script type="text/javascript" src="/++resource++obfuscation.js"></script>
+      <div metal:use-macro="here/@@listen_macros/bcrumb"/>
+      <div metal:use-macro="here/@@listen_macros/tabs"/>
+      <div id="oc-content-main">
+        <div class="oc-headingBlock">
+          <h2>Subscribe members</h2>
+        </div>
+          <!-- subscribe members -->
+          <form name="subscribe-members" id="subscribe-members" method="post">
+
+            <div class="field">
+              <label for="emails">Emails:</label>
+              (enter e-mail addresses or usernames; use commas or newlines to separate;)
+              <div>
+                <textarea name="add_email" 
+                          rows="5"></textarea>
+              </div>
+            </div> 
+
+            <input class="context" type="submit" name="subscribe" value="Subscribe"/>
+            <a href="manage_membership">Cancel</a>
+          </form>
+        </div>
+      </div>
+  </body>
+</html>
+
+

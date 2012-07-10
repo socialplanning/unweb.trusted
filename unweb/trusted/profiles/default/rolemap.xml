@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<rolemap>
+  <roles>
+    <role name="Trusted List Admin"/>
+  </roles>
+  <permissions>
+    <permission name="unweb.trusted: Subscribe others"
+                acquire="True">
+      <role name="Trusted List Admin"/>
+      <role name="Manager" />
+    </permission>
+  </permissions>
+</rolemap>
+
+

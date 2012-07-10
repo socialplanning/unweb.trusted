@@ -1,0 +1,12 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser">
+    <browser:page
+        for="Products.listen.interfaces.IHaveSubscribers"
+        name="manage_membership"
+        class="unweb.trusted.manage_membership.ManageMembersView"
+        permission="listen.EditMailingList"
+        template="manage_membership.pt"
+        layer="unweb.trusted.interfaces.IUnwebTrusted"
+        />
+
+</configure>

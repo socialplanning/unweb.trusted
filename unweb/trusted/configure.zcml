@@ -1,0 +1,31 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="unweb.trusted">
+
+  <five:registerPackage package="." initialize=".initialize" />
+  <include file="permissions.zcml" />
+
+  <!-- -*- extra stuff goes here -*- -->
+  <genericsetup:registerProfile
+      name="unweb.trusted"
+      title="Unweb trusted"
+      directory="profiles/default"
+      description="Trusted users for Listen mailing lists."
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+    <browser:page
+       for="Products.listen.interfaces.IHaveSubscribers"
+       class=".manage_membership.ManageMembersView"
+       name="subscribe_members"
+       permission="unweb.trusted.SubscribeOthers"
+       template="subscribe_members.pt"
+       />
+
+  
+</configure>

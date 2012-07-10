@@ -1,0 +1,8 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           i18n_domain="unweb.trusted">
+  <permission
+    id="unweb.trusted.SubscribeOthers"
+    title="unweb.trusted: Subscribe others"
+    />
+
+</configure>
