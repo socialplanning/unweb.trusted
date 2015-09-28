@@ -33,6 +33,6 @@ setup(name='unweb.trusted',
       [z3c.autoinclude.plugin]
       target = plone
       """,
-      setup_requires=["PasteScript"],
-      paster_plugins=["ZopeSkel"],
+      #setup_requires=["Paste==1.7.5.1", "PasteScript==1.7.5"],
+      #paster_plugins=["ZopeSkel"],
       )
