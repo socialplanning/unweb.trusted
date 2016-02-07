@@ -2,6 +2,7 @@ from opencore.listen.browser.view import NuiManageMembersView
 from Products.CMFCore.utils import getToolByName
 from Products.listen.config import MEMBERSHIP_ALLOWED, MEMBERSHIP_DENIED
 from Acquisition import aq_inner
+from unweb.trusted import permissions
 
 class ManageMembersView(NuiManageMembersView):
 
