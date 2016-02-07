@@ -29,6 +29,8 @@ setup(name='unweb.trusted',
       ],
       entry_points="""
       # -*- Entry points: -*-
+      [topp.zcmlloader]
+      opencore = unweb.trusted
 
       [z3c.autoinclude.plugin]
       target = plone
