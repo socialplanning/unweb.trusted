@@ -7,22 +7,22 @@
       <div metal:use-macro="here/@@listen_macros/tabs"/>
       <div id="oc-content-main">
         <div class="oc-headingBlock">
-          <h2>Subscribe members</h2>
+          <h2 i18n:translate="">Subscribe members</h2>
         </div>
           <!-- subscribe members -->
           <form name="subscribe-members" id="subscribe-members" method="post">
 
             <div class="field">
-              <label for="emails">Emails:</label>
-              (enter e-mail addresses or usernames; use commas or newlines to separate;)
+              <label for="emails" i18n:translate="">Emails:</label>
+              <span i18n:translate="">(enter e-mail addresses or usernames; use commas or newlines to separate;)</span>
               <div>
                 <textarea name="add_email" 
                           rows="5"></textarea>
               </div>
             </div> 
 
-            <input class="context" type="submit" name="subscribe" value="Subscribe"/>
-            <a href="manage_membership">Cancel</a>
+            <input class="context" type="submit" name="subscribe" value="Subscribe" i18n:attributes="value" />
+            <a href="manage_membership" i18n:translate="">Cancel</a>
           </form>
         </div>
       </div>

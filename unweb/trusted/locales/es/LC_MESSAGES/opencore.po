@@ -1,0 +1,99 @@
+# Gettext Message File for Spanish translation of opencore domain using on unweb.trusted package
+# Translators:
+# Leonardo J. Caballero G. <leonardocaballero@gmail.com>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: opencore\n"
+"POT-Creation-Date: 2020-01-08 23:11+0000\n"
+"PO-Revision-Date: 2020-01-07 22:34-0400\n"
+"Last-Translator: Leonardo J. Caballero G. <leonardocaballero@gmail.com>\n"
+"Language-Team: ES <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language-Code: es\n"
+"Language-Name: Español\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: opencore\n"
+"Language: es\n"
+"X-Generator: Virtaal 0.7.1\n"
+"X-Is-Fallback-For: es-ar es-bo es-cl es-co es-cr es-do es-ec es-es es-sv es-gt es-hn es-mx es-ni es-pa es-py es-pe es-pr es-us es-uy es-ve\n"
+
+#: ../subscribe_members.pt:17
+msgid "(enter e-mail addresses or usernames; use commas or newlines to separate;)"
+msgstr ""
+
+#: ../subscribe_members.pt:25
+msgid "Cancel"
+msgstr ""
+
+#: ../manage_membership.pt:49
+msgid "Contact"
+msgstr ""
+
+#. Default: "Contact (email)"
+#: ../manage_membership.pt:53
+msgid "Contact_email"
+msgstr ""
+
+#: ../subscribe_members.pt:16
+msgid "Emails:"
+msgstr ""
+
+#: ../manage_membership.pt:82
+msgid "Save changes"
+msgstr ""
+
+#: ../subscribe_members.pt:24
+msgid "Subscribe"
+msgstr ""
+
+#: ../subscribe_members.pt:10
+msgid "Subscribe members"
+msgstr ""
+
+#. Default: "Add:"
+#: ../manage_membership.pt:66
+msgid "manage_membership_add"
+msgstr ""
+
+#. Default: "Added: ${added}"
+#: ../manage_membership.py:72
+msgid "manage_membership_added_msg"
+msgstr ""
+
+#. Default: "Bad user or email address: ${errors}"
+#: ../manage_membership.py:67
+msgid "manage_membership_bad_user_email_msg"
+msgstr ""
+
+#. Default: "<br />Use the above form to add allowed senders or to invite new mailing list members. Since you are a trusted list admin on openfsm.net you can instead ${subscribe_members_directly} without requiring their email confirmation. Please use with caution and only if certain that the user will not object."
+#: ../manage_membership.pt:87
+msgid "manage_membership_can_subscribe_others"
+msgstr ""
+
+#. Default: "Remove"
+#: ../manage_membership.pt:20
+msgid "manage_membership_remove"
+msgstr ""
+
+#. Default: "Subscribe?"
+#: ../manage_membership.pt:71
+msgid "manage_membership_subscribe"
+msgstr ""
+
+#. Default: "subscribe new members directly"
+#: ../manage_membership.pt:87
+msgid "manage_membership_subscribe_members_directly"
+msgstr ""
+
+#. Default: "Subscribed"
+#: ../manage_membership.pt:22
+msgid "manage_membership_subscribed"
+msgstr ""
+
+#. Default: "Address / User ID"
+#: ../manage_membership.pt:21
+msgid "manage_membership_user"
+msgstr ""

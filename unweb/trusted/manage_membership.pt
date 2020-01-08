@@ -82,9 +82,11 @@
             <input type="submit" name="save" value="Save changes" i18n:attributes="value" />
           </div>
 
-          <div tal:condition="view/can_subscribe_others"><br />Use the above form to add allowed senders or to invite new mailing list members. Since you are a trusted list admin on openfsm.net you can instead <a class="listen-subscribe-members" href="subscribe_members">
+          <div tal:condition="view/can_subscribe_others"
+               i18n:translate="manage_membership_can_subscribe_others">
+               <br />Use the above form to add allowed senders or to invite new mailing list members. Since you are a trusted list admin on openfsm.net you can instead <a class="listen-subscribe-members" href="subscribe_members" i18n:translate="manage_membership_subscribe_members_directly" i18n:name="subscribe_members_directly">
               subscribe new members directly</a>
-          without requiring their email confirmation. Please use with caution and only if certain that the user
+              without requiring their email confirmation. Please use with caution and only if certain that the user
  will not object.</div>
 
           <!-- ???

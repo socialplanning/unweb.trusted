@@ -1,3 +1,4 @@
+from opencore.i18n import _
 from opencore.listen.browser.view import NuiManageMembersView
 from Products.CMFCore.utils import getToolByName
 from Products.listen.config import MEMBERSHIP_ALLOWED, MEMBERSHIP_DENIED
@@ -63,9 +64,13 @@ class ManageMembersView(NuiManageMembersView):
             plone_utils = getToolByName(context, 'plone_utils')
 
             if errors:
-                plone_utils.addPortalMessage('Bad user or email address: %s' % ', '.join(errors))
+                plone_utils.addPortalMessage(_(u'manage_membership_bad_user_email_msg',
+                                               u'Bad user or email address: ${errors}',
+                                               mapping={'errors':', '.join(errors)}))
 
             if added:
-                plone_utils.addPortalMessage('Added: %s' % ', '.join(added))
+                plone_utils.addPortalMessage(_(u'manage_membership_added_msg',
+                                               u'Added: ${added}',
+                                               mapping={'added':', '.join(added)}))
        
         self.request.response.redirect(self.context.absolute_url()+'/manage_membership')
